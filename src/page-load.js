@@ -19,7 +19,7 @@ function loadHome() {
   headline.textContent = "Cantina Latina Magnificat";
 
   insides.id = "insides";
-  insides.src = "../src/images/insides.jpeg";
+  insides.src = "./images/insides.jpeg";
   insides.alt = "insides";
   insides.style.width = "90%";
 
@@ -63,10 +63,10 @@ function loadMenu() {
   headline.textContent = "Menu";
 
   menu.appendChild(headline);
-  makeFood(menu, "../src/images/beef-steak.jpeg", "Beef Steak");
-  makeFood(menu, "../src/images/aspargus-barbecue.jpeg", "Aspargus Barbecue");
-  makeFood(menu, "../src/images/potato-cepelinai.jpeg", "Potato Cepelinai");
-  makeFood(menu, "../src/images/vegetarian-salad.jpeg", "Vegetarian Salad");
+  makeFood(menu, "./images/beef-steak.jpeg", "Beef Steak");
+  makeFood(menu, "./images/aspargus-barbecue.jpeg", "Aspargus Barbecue");
+  makeFood(menu, "./images/potato-cepelinai.jpeg", "Potato Cepelinai");
+  makeFood(menu, "./images/vegetarian-salad.jpeg", "Vegetarian Salad");
   content.appendChild(menu);
 }
 
@@ -84,7 +84,7 @@ function loadAbout() {
   headline.textContent = "About Us";
 
   insides.id = "insides";
-  insides.src = "../src/images/service.jpeg";
+  insides.src = "./images/service.jpeg";
   insides.alt = "insides";
   insides.style.width = "90%";
 
