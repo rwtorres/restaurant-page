@@ -1,11 +1,11 @@
-function loadPage() {
-  loadHome();
-  loadMenu();
-  loadAbout();
-  loadContact();
+function loadPage(container) {
+  loadHome(container);
+  loadMenu(container);
+  loadAbout(container);
+  loadContact(container);
 }
 
-function loadHome() {
+function loadHome(container) {
   const home = document.createElement("div");
   const headline = document.createElement("h1");
   const insides = document.createElement("img");
@@ -35,7 +35,7 @@ function loadHome() {
   home.appendChild(headline);
   home.appendChild(insides);
   home.appendChild(description);
-  content.appendChild(home);
+  container.appendChild(home);
 }
 
 function makeFood(catalog, source, name) {
@@ -51,7 +51,7 @@ function makeFood(catalog, source, name) {
 }
 
 
-function loadMenu() {
+function loadMenu(container) {
   const menu = document.createElement("div");
   const headline = document.createElement("h1");
 
@@ -67,10 +67,10 @@ function loadMenu() {
   makeFood(menu, "./images/aspargus-barbecue.jpeg", "Aspargus Barbecue");
   makeFood(menu, "./images/potato-cepelinai.jpeg", "Potato Cepelinai");
   makeFood(menu, "./images/vegetarian-salad.jpeg", "Vegetarian Salad");
-  content.appendChild(menu);
+  container.appendChild(menu);
 }
 
-function loadAbout() {
+function loadAbout(container) {
   const about = document.createElement("div");
   const headline = document.createElement("h1");
   const insides = document.createElement("img");
@@ -111,10 +111,10 @@ function loadAbout() {
   about.appendChild(headline);
   about.appendChild(insides);
   about.appendChild(description);
-  content.appendChild(about);
+  container.appendChild(about);
 }
 
-function loadContact() {
+function loadContact(container) {
   const contact = document.createElement("div");
   const headline = document.createElement("h1");
   const whatsapp = document.createElement("p");
@@ -133,7 +133,7 @@ function loadContact() {
   contact.appendChild(headline);
   contact.appendChild(whatsapp);
   contact.appendChild(instagram);
-  content.appendChild(contact);
+  container.appendChild(contact);
 }
 
 export { loadPage };

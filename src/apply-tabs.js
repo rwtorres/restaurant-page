@@ -7,7 +7,7 @@ function createTabButton(name, bar) {
   bar.appendChild(newButton);
 }
 
-function createTabs() {
+function createTabs(container) {
   const tabBar = document.createElement("div");
 
   tabBar.className = "w3-bar w3-black";
@@ -19,7 +19,7 @@ function createTabs() {
   createTabButton("about", tabBar);
   createTabButton("contact", tabBar);
 
-  content.appendChild(tabBar);
+  container.appendChild(tabBar);
 }
 
 function openTab(name) {
