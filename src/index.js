@@ -10,7 +10,7 @@ content.style.textAlign = "center";
 document.body.style.color = "white";
 document.body.style.backgroundColor = "#151515";
 w3css.rel = "stylesheet";
-w3css.href = "./w3.css";
+w3css.href = "./styles/w3.css";
 head.appendChild(w3css);
 
 createTabs();
